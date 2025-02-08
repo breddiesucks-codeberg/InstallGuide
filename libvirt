@@ -5,9 +5,18 @@ A quick reference made to note down the steps to setup libvirt
 
 1. Install the following packages (or their equivalents):
 => libvirt
+=> qemu-desktop
+=> dmidecode
+=> libguestfs
 => dnsmasq
 => openbsd-netcat
+=> bridge-utils
+=> vde2
 
 2. Add and Start the libvirt daemon (libvirtd)
 
-3. Install qemu-full (I mean, I don't wanna go insane without few QoL)
+3. Add/Edit the following lines in the /etc/libvirt/libvirtd.conf
+$ unix_sock_group = "libvirt"
+$ unix_sock_rw_perms = "0770"
+
+4. Restart libvirtd daemon

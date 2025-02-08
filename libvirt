@@ -3,4 +3,11 @@
 
 A quick reference made to note down the steps to setup libvirt
 
-1.
+1. Install the following packages (or their equivalents):
+=> libvirt
+=> dnsmasq
+=> openbsd-netcat
+
+2. Add and Start the libvirt daemon (libvirtd)
+
+3. Install qemu-full (I mean, I don't wanna go insane without few QoL)

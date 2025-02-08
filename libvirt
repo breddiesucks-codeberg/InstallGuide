@@ -16,7 +16,11 @@ A quick reference made to note down the steps to setup libvirt
 2. Add and Start the libvirt daemon (libvirtd)
 
 3. Add/Edit the following lines in the /etc/libvirt/libvirtd.conf
-$ unix_sock_group = "libvirt"
-$ unix_sock_rw_perms = "0770"
+> unix_sock_group = "libvirt"
+> unix_sock_rw_perms = "0770"
 
-4. Restart libvirtd daemon
+4. Add your user to libvirt and kvm groups
+$ usermod -a -G libvirt ---
+$ usermod -a -G kvm ---
+
+5. Restart libvirtd daemon

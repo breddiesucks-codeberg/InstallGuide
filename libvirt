@@ -39,3 +39,9 @@ qemu-system-x86_64 -enable-kvm\
 -cpu host\
 -vga virtio\
 -display sdl,gl=on
+
+GENERAL USE SHORTCUTS
+---------------------
+You WILL need this, I double dare ya
+Ctrl - Alt - G => Uncapture from the VM
+Ctrl - Alt - F => Fullscreen 
